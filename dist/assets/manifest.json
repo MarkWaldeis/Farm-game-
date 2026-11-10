@@ -1,0 +1,671 @@
+{
+ "style": "cozy isometric mobile farm (Hay Day-like), soft cel shading, light top-left",
+ "pivot_convention": "pixel coords from top-left; bottom_center = feet/base",
+ "assets": [
+  {
+   "name": "chicken_idle",
+   "category": "animals",
+   "path": "animals/chicken_idle.png",
+   "width": 107,
+   "height": 132,
+   "pivot": [
+    53,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "chicken",
+   "frame": "idle"
+  },
+  {
+   "name": "chicken_walk_a",
+   "category": "animals",
+   "path": "animals/chicken_walk_a.png",
+   "width": 107,
+   "height": 132,
+   "pivot": [
+    53,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "chicken",
+   "frame": "walk_a"
+  },
+  {
+   "name": "chicken_walk_b",
+   "category": "animals",
+   "path": "animals/chicken_walk_b.png",
+   "width": 107,
+   "height": 132,
+   "pivot": [
+    53,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "chicken",
+   "frame": "walk_b"
+  },
+  {
+   "name": "chicken_peck",
+   "category": "animals",
+   "path": "animals/chicken_peck.png",
+   "width": 107,
+   "height": 132,
+   "pivot": [
+    53,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "chicken",
+   "frame": "peck"
+  },
+  {
+   "name": "chicken_sheet",
+   "category": "animals",
+   "path": "animals/chicken_sheet.png",
+   "width": 428,
+   "height": 132,
+   "pivot": [
+    53,
+    131
+   ],
+   "pivot_kind": "custom",
+   "frame_width": 107,
+   "frame_height": 132,
+   "frames": [
+    "idle",
+    "walk_a",
+    "walk_b",
+    "peck"
+   ],
+   "note": "horizontal strip, pivot per frame"
+  },
+  {
+   "name": "pig_idle",
+   "category": "animals",
+   "path": "animals/pig_idle.png",
+   "width": 152,
+   "height": 132,
+   "pivot": [
+    76,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "pig",
+   "frame": "idle"
+  },
+  {
+   "name": "pig_walk_a",
+   "category": "animals",
+   "path": "animals/pig_walk_a.png",
+   "width": 152,
+   "height": 132,
+   "pivot": [
+    76,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "pig",
+   "frame": "walk_a"
+  },
+  {
+   "name": "pig_walk_b",
+   "category": "animals",
+   "path": "animals/pig_walk_b.png",
+   "width": 152,
+   "height": 132,
+   "pivot": [
+    76,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "pig",
+   "frame": "walk_b"
+  },
+  {
+   "name": "pig_eat",
+   "category": "animals",
+   "path": "animals/pig_eat.png",
+   "width": 152,
+   "height": 132,
+   "pivot": [
+    76,
+    131
+   ],
+   "pivot_kind": "bottom_center",
+   "animation": "pig",
+   "frame": "eat"
+  },
+  {
+   "name": "pig_sheet",
+   "category": "animals",
+   "path": "animals/pig_sheet.png",
+   "width": 608,
+   "height": 132,
+   "pivot": [
+    76,
+    131
+   ],
+   "pivot_kind": "custom",
+   "frame_width": 152,
+   "frame_height": 132,
+   "frames": [
+    "idle",
+    "walk_a",
+    "walk_b",
+    "eat"
+   ],
+   "note": "horizontal strip, pivot per frame"
+  },
+  {
+   "name": "farmhouse",
+   "category": "buildings",
+   "path": "buildings/farmhouse.png",
+   "width": 384,
+   "height": 392,
+   "pivot": [
+    192,
+    391
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "barn",
+   "category": "buildings",
+   "path": "buildings/barn.png",
+   "width": 448,
+   "height": 500,
+   "pivot": [
+    224,
+    499
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "chicken_coop",
+   "category": "buildings",
+   "path": "buildings/chicken_coop.png",
+   "width": 256,
+   "height": 283,
+   "pivot": [
+    128,
+    282
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "delivery_truck",
+   "category": "buildings",
+   "path": "buildings/delivery_truck.png",
+   "width": 256,
+   "height": 200,
+   "pivot": [
+    128,
+    199
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "order_board",
+   "category": "buildings",
+   "path": "buildings/order_board.png",
+   "width": 224,
+   "height": 302,
+   "pivot": [
+    112,
+    301
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "tree_oak",
+   "category": "nature",
+   "path": "nature/tree_oak.png",
+   "width": 225,
+   "height": 256,
+   "pivot": [
+    112,
+    255
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "tree_apple",
+   "category": "nature",
+   "path": "nature/tree_apple.png",
+   "width": 232,
+   "height": 256,
+   "pivot": [
+    116,
+    255
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "windmill",
+   "category": "buildings",
+   "path": "buildings/windmill.png",
+   "width": 198,
+   "height": 288,
+   "pivot": [
+    99,
+    287
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "hay_bale",
+   "category": "decor",
+   "path": "decor/hay_bale.png",
+   "width": 128,
+   "height": 112,
+   "pivot": [
+    64,
+    111
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "fence_se",
+   "category": "fences",
+   "path": "fences/fence_se.png",
+   "width": 128,
+   "height": 123,
+   "pivot": [
+    64,
+    122
+   ],
+   "pivot_kind": "bottom_center",
+   "note": "runs upper-left -> lower-right"
+  },
+  {
+   "name": "fence_ne",
+   "category": "fences",
+   "path": "fences/fence_ne.png",
+   "width": 128,
+   "height": 123,
+   "pivot": [
+    64,
+    122
+   ],
+   "pivot_kind": "bottom_center",
+   "note": "mirror of fence_se, runs lower-left -> upper-right"
+  },
+  {
+   "name": "pigpen_fence_trough",
+   "category": "fences",
+   "path": "fences/pigpen_fence_trough.png",
+   "width": 144,
+   "height": 143,
+   "pivot": [
+    72,
+    142
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "fence_post",
+   "category": "fences",
+   "path": "fences/fence_post.png",
+   "width": 21,
+   "height": 72,
+   "pivot": [
+    10,
+    71
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "grass",
+   "category": "tiles",
+   "path": "tiles/grass.png",
+   "width": 256,
+   "height": 157,
+   "pivot": [
+    128,
+    78
+   ],
+   "pivot_kind": "center",
+   "note": "iso diamond-ish tile with slight thickness, not pixel-exact 2:1"
+  },
+  {
+   "name": "soil_empty",
+   "category": "tiles",
+   "path": "tiles/soil_empty.png",
+   "width": 256,
+   "height": 156,
+   "pivot": [
+    128,
+    78
+   ],
+   "pivot_kind": "center",
+   "note": "iso diamond-ish tile with slight thickness, not pixel-exact 2:1"
+  },
+  {
+   "name": "soil_plowed",
+   "category": "tiles",
+   "path": "tiles/soil_plowed.png",
+   "width": 256,
+   "height": 158,
+   "pivot": [
+    128,
+    79
+   ],
+   "pivot_kind": "center",
+   "note": "iso diamond-ish tile with slight thickness, not pixel-exact 2:1"
+  },
+  {
+   "name": "soil_watered",
+   "category": "tiles",
+   "path": "tiles/soil_watered.png",
+   "width": 256,
+   "height": 160,
+   "pivot": [
+    128,
+    80
+   ],
+   "pivot_kind": "center",
+   "note": "iso diamond-ish tile with slight thickness, not pixel-exact 2:1"
+  },
+  {
+   "name": "wheat_sprout",
+   "category": "crops",
+   "path": "crops/wheat_sprout.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "wheat",
+   "stage": "sprout"
+  },
+  {
+   "name": "wheat_growing",
+   "category": "crops",
+   "path": "crops/wheat_growing.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "wheat",
+   "stage": "growing"
+  },
+  {
+   "name": "wheat_ripe",
+   "category": "crops",
+   "path": "crops/wheat_ripe.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "wheat",
+   "stage": "ripe"
+  },
+  {
+   "name": "corn_sprout",
+   "category": "crops",
+   "path": "crops/corn_sprout.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "corn",
+   "stage": "sprout"
+  },
+  {
+   "name": "corn_growing",
+   "category": "crops",
+   "path": "crops/corn_growing.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "corn",
+   "stage": "growing"
+  },
+  {
+   "name": "corn_ripe",
+   "category": "crops",
+   "path": "crops/corn_ripe.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "corn",
+   "stage": "ripe"
+  },
+  {
+   "name": "carrot_sprout",
+   "category": "crops",
+   "path": "crops/carrot_sprout.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "carrot",
+   "stage": "sprout"
+  },
+  {
+   "name": "carrot_growing",
+   "category": "crops",
+   "path": "crops/carrot_growing.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "carrot",
+   "stage": "growing"
+  },
+  {
+   "name": "carrot_ripe",
+   "category": "crops",
+   "path": "crops/carrot_ripe.png",
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    64,
+    124
+   ],
+   "pivot_kind": "custom",
+   "crop": "carrot",
+   "stage": "ripe"
+  },
+  {
+   "name": "flowers_pink",
+   "category": "decor",
+   "path": "decor/flowers_pink.png",
+   "width": 112,
+   "height": 94,
+   "pivot": [
+    56,
+    93
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "sunflowers",
+   "category": "decor",
+   "path": "decor/sunflowers.png",
+   "width": 112,
+   "height": 120,
+   "pivot": [
+    56,
+    119
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "bush",
+   "category": "decor",
+   "path": "decor/bush.png",
+   "width": 112,
+   "height": 102,
+   "pivot": [
+    56,
+    101
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "flower_cart",
+   "category": "decor",
+   "path": "decor/flower_cart.png",
+   "width": 160,
+   "height": 173,
+   "pivot": [
+    80,
+    172
+   ],
+   "pivot_kind": "bottom_center"
+  },
+  {
+   "name": "coin",
+   "category": "ui",
+   "path": "ui/coin.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "gem",
+   "category": "ui",
+   "path": "ui/gem.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "xp_star",
+   "category": "ui",
+   "path": "ui/xp_star.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "sickle",
+   "category": "ui",
+   "path": "ui/sickle.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "seed_bag",
+   "category": "ui",
+   "path": "ui/seed_bag.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "shop",
+   "category": "ui",
+   "path": "ui/shop.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "egg",
+   "category": "products",
+   "path": "products/egg.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "bacon",
+   "category": "products",
+   "path": "products/bacon.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "produce_basket",
+   "category": "products",
+   "path": "products/produce_basket.png",
+   "width": 96,
+   "height": 96,
+   "pivot": [
+    48,
+    48
+   ],
+   "pivot_kind": "center"
+  },
+  {
+   "name": "wood_panel",
+   "category": "ui",
+   "path": "ui/wood_panel.png",
+   "width": 768,
+   "height": 448,
+   "pivot": [
+    384,
+    224
+   ],
+   "pivot_kind": "center",
+   "nine_slice": {
+    "left": 48,
+    "right": 48,
+    "top": 48,
+    "bottom": 48
+   },
+   "note": "9-slice margins approx"
+  }
+ ]
+}
